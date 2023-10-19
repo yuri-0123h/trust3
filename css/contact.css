@@ -1,0 +1,223 @@
+
+#contact{
+  margin-top: 73px;
+  padding: 0 25px;
+  letter-spacing: 1px;
+  font-family: 源ノ角ゴシック JP;
+  /* border: 1px solid red; */
+}
+
+
+.title{
+  font-size: 32px;
+  border-bottom: 2px solid #792DDC;
+  padding-left: 0;
+  padding-top: 80px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  display: block;
+}
+.section-title p{
+  font-size: 14px;
+}
+.section-title{
+  margin-bottom: 60px;
+}
+
+.section-subtitle{
+  font-size: 22px;
+  border-bottom: 2px solid #792DDC;
+  margin-bottom: 30px;
+  display: block;
+  padding-left: 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+.section-subtitle::before{
+  content:"";
+  background-color: #792DDC;
+  height: 6px;
+  position: absolute;
+  width: 10px;
+  top:50%;
+  left:0px;
+  transform: translate(0,-50%);
+}
+.section-subtitle::after{
+  content:"";
+  background-color: #CCCCCC;
+  height: 6px;
+  position: absolute;
+  width: 10px;
+  top:50%;
+  left:10px;
+  transform: translate(0,-50%);
+}
+
+.contact-menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  /* border: 1px solid red; */
+  padding-left: 0;
+  margin-bottom: 60px;
+}
+
+.contact-menu li{
+  width: 48.3%;
+  list-style-type: none;
+  display: table;
+  border-radius: 7px;
+  background-color:#792DDC;
+  position: relative;
+}
+.contact-menu li img{
+  position: absolute;
+  width: 20px;
+  /* height: 20px; */
+  z-index: 10;
+  background-color: white;
+  padding: 3px 5px;
+  border-radius: 50%;
+  right: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.contact-menu li a{
+  text-decoration: none;
+  color: white;
+  height: 100px;
+  font-size: 18px;
+  /* border: 1px solid red; */
+  display: block;
+  padding: 0 20px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+
+.tel-form{
+  text-align:center;
+  margin-bottom: 100px;
+}
+.tel-form .section-subtitle{
+  text-align:left;
+}
+.tel-form .telnumber{
+  font-size: 45px;
+  margin-bottom: 0;
+  font-weight: bold;
+  /* border: 1px solid red; */
+  padding-bottom: 0;
+  /* margin-bottom: 15px; */
+  display: table;
+  margin: 0 auto;
+  
+}
+.tel-form .telnumber span{
+  font-size: 24px;
+  /* border: 1px solid red; */
+  font-weight: normal;
+  padding-right: 15px;
+  display: table-cell;
+  vertical-align: middle;
+
+}
+.tel-form .teltime{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.teldetail{
+  font-size: 16px;
+}
+
+
+@media(max-width: 968px){
+  .title{
+    font-size: 26px;
+    padding-bottom: 12px;
+    padding-top: 24px;
+  }
+  .section-title p{
+    font-size: 11px;
+  }
+  .section-subtitle{
+    font-size: 16px;
+    padding-bottom: 12px;
+    padding-left: 19px;
+  }
+  .contact-menu li{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-menu li a{
+    height: 70px;
+    font-size: 14px;
+  }
+  .contact-menu{
+    gap: 0px;
+  }
+  .section-title{
+    margin-bottom: 48px;
+  }
+  .contact-menu{
+    margin-bottom: 48px;
+  }
+  .contact-menu li a{
+    padding-right: 30px;
+  }
+  .tel-form{
+    text-align:center;
+    margin-bottom: 80px;
+  }
+  .tel-form .telnumber{
+    font-size: 33px;
+  }
+  .tel-form .telnumber span{
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .tel-form .teltime{
+    font-size: 16px;
+  }
+  .tel-form .teldetail{
+    font-size: 12px;
+  }
+  .section-subtitle::before{
+    height: 3px;
+    width: 5px;
+    top:40%;
+    left:0px;
+  }
+  .section-subtitle::after{
+    height: 3px;
+    width: 5px;
+    top:40%;
+    left:5px;
+  }
+}
+
+@media(max-width: 320px){
+  .title{
+    padding-bottom: 30px;
+  }
+  .section-title{
+    margin-bottom: 60px;
+  }
+  .contact-menu li a{
+    height: 85px;
+  }
+  .contact-menu li a{
+    padding-right: 40px;
+  }
+  .contact-menu{
+    margin-bottom: 60px;
+  }
+}
+
