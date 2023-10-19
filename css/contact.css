@@ -201,6 +201,12 @@
     top:40%;
     left:5px;
   }
+  .contact-menu li img{
+  width: 17px;
+  /* height: 20px; */
+  right: 12px;
+
+}
 }
 
 @media(max-width: 320px){
